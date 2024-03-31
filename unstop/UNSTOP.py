@@ -36,15 +36,9 @@ def find_hacks():                   # function to extract hackathons from unstop
 
     hackathons = []
 
-    # try:
-
     hack_xpath = "//div[@class='content']"
-
-    hackathons = []
-
     hack_list = browser.find_elements(By.XPATH,hack_xpath)
-    # for p in hack_list:
-    #     print(p.text)
+    
     for hack in hack_list:
         hack.click()
         sleep(1)
